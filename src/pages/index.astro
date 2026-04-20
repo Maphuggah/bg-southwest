@@ -1,0 +1,107 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout
+  title="B & G Southwest Couriers | Commercial Surface Care in San Diego"
+  description="San Diego's premier commercial surface care and facility maintenance company. We deliver excellent service for VCT, polished concrete, and commercial carpets."
+>
+  <Fragment slot="head">
+    <link rel="preload" as="image" href="/img/hero.png" fetchpriority="high">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "LocalBusiness",
+          "@id": "https://bgsouthwest.com/#organization",
+          "name": "B & G Southwest Couriers",
+          "description": "Premium commercial surface care, facility maintenance, and hard floor restoration services in San Diego County.",
+          "url": "https://bgsouthwest.com",
+          "telephone": "+1-619-555-0199",
+          "areaServed": "San Diego County",
+          "image": "https://bgsouthwest.com/img/hero.png",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "San Diego",
+            "addressRegion": "CA",
+            "addressCountry": "US"
+          },
+          "priceRange": "$$"
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://bgsouthwest.com/#website",
+          "url": "https://bgsouthwest.com",
+          "name": "B & G Southwest Couriers",
+          "publisher": {"@id": "https://bgsouthwest.com/#organization"}
+        }
+      ]
+    }
+    </script>
+  </Fragment>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <img src="/img/hero.png" alt="Gleaming polished concrete floor in a modern San Diego commercial building" class="hero-bg" fetchpriority="high">
+    <div class="hero-gradient"></div>
+    <div class="container relative z-10">
+      <div class="hero-content">
+        <h1>San Diego's Standard for <span>Surface Care</span> Excellence</h1>
+        <p>You manage the facility. We manage the standard. From high-traffic VCT to premium executive carpets, B & G Southwest Couriers delivers precision maintenance directly to your doors.</p>
+        <div style="display: flex; gap: 1rem;">
+          <a href="/contact" class="btn btn-primary">Request an Assessment</a>
+          <a href="/services" class="btn btn-secondary">Explore Services</a>
+        </div>
+        <div class="hero-badges">
+          <div class="badge">📍 Serving San Diego County</div>
+          <div class="badge">⭐ IICRC Certified Methods</div>
+          <div class="badge">🛡️ Fully Insured & Bonded</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Introduction -->
+    <section class="section-padding container">
+      <div class="featured-section">
+        <div>
+          <h2>We Deliver Results, Not Just Maintenance.</h2>
+          <p>The name "Couriers" wasn't an accident. We built this company on the unwavering logistics of delivery—delivering exact standards, arriving on precise schedules, and executing with flawless accountability. That same rigid reliability now powers San Diego's most robust commercial floor care programs.</p>
+          <p>Whether you require scheduled VCT stripping and waxing, or deep hot-water extraction for expansive corporate carpets, our teams deploy with the right equipment and the right science.</p>
+          <a href="/about" class="btn btn-secondary" style="margin-top: 1rem;">Why the name Couriers? Read our story &rarr;</a>
+        </div>
+        <div class="featured-img-wrapper">
+          <img src="/img/van.png" alt="Sleek commercial service van parked in sunny San Diego business district" class="featured-img" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="section-padding" style="background: var(--bg-primary-dark); color: white;">
+      <div class="container">
+        <h2 style="color: white; text-align: center; margin-bottom: 3rem;">Core Surface Care Protocols</h2>
+        <div class="grid grid-3">
+          <div class="card" style="background: var(--brand-navy-light); border-color: rgba(255,255,255,0.1);">
+            <div class="card-icon">🏢</div>
+            <h3 style="color: white;">Hard Floor Care</h3>
+            <p style="color: #cbd5e1;">Comprehensive care for VCT, LVT, and Terrazzo. We strip, wax, seal, and burnish to maintain a durable, slip-resistant, and high-gloss finish that protects your investment.</p>
+          </div>
+          <div class="card" style="background: var(--brand-navy-light); border-color: rgba(255,255,255,0.1);">
+            <div class="card-icon">✨</div>
+            <h3 style="color: white;">Polished Concrete</h3>
+            <p style="color: #cbd5e1;">Using advanced diamond-grit grinding and densifying solutions, we restore concrete to a highly reflective, dust-proof state ideal for industrial and retail spaces.</p>
+          </div>
+          <div class="card" style="background: var(--brand-navy-light); border-color: rgba(255,255,255,0.1);">
+            <div class="card-icon">🧶</div>
+            <h3 style="color: white;">Carpet Extraction</h3>
+            <p style="color: #cbd5e1;">Deep hot-water extraction and low-moisture encapsulation protocols that remove embedded soils, improve indoor air quality, and extend the lifespan of commercial textiles.</p>
+          </div>
+        </div>
+        <div style="text-align: center; margin-top: 3rem;">
+          <a href="/services" class="btn btn-primary">View the Complete Protocol Catalog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+</BaseLayout>

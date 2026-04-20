@@ -1,0 +1,49 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout
+  title="Areas Served | San Diego Commercial Cleaning | B & G Southwest"
+  description="B & G Southwest Couriers provides premium commercial surface care across San Diego County, including Sorrento Valley, Carlsbad, Downtown, and Kearny Mesa."
+>
+  <header class="hero" style="min-height: 50vh;">
+    <img src="/img/hero-areas.png" alt="Aerial view of downtown San Diego" class="hero-bg" fetchpriority="high">
+    <div class="hero-gradient"></div>
+    <div class="container">
+      <div class="hero-content" style="text-align: center; margin: 0 auto; width: 100%; padding-top: 4rem;">
+        <h1 style="color: white;">Serving <span>San Diego County</span></h1>
+        <p style="max-width: 600px; margin: 0 auto; color: #cbd5e1;">Rapid, reliable deployment of commercial surface care teams across the greater San Diego region.</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section-padding container">
+      <div class="grid grid-2" style="align-items: start;">
+        <div>
+          <h2>Our Local Footprint</h2>
+          <p>Because our operations are built on a courier-style dispatch methodology, our teams are highly mobile and efficiently routed throughout San Diego County. We service millions of square feet nightly across these key business districts:</p>
+
+          <ul style="list-style: none; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 2rem;">
+            <li style="padding: 1rem; background: var(--bg-surface); border-radius: var(--radius-sm); box-shadow: var(--shadow-sm); border-left: 4px solid var(--brand-amber);"><strong>Sorrento Valley</strong> (Tech & Biotech)</li>
+            <li style="padding: 1rem; background: var(--bg-surface); border-radius: var(--radius-sm); box-shadow: var(--shadow-sm); border-left: 4px solid var(--brand-amber);"><strong>Carlsbad</strong> (Corporate HQs)</li>
+            <li style="padding: 1rem; background: var(--bg-surface); border-radius: var(--radius-sm); box-shadow: var(--shadow-sm); border-left: 4px solid var(--brand-amber);"><strong>Downtown San Diego</strong> (High-Rises)</li>
+            <li style="padding: 1rem; background: var(--bg-surface); border-radius: var(--radius-sm); box-shadow: var(--shadow-sm); border-left: 4px solid var(--brand-amber);"><strong>Kearny Mesa</strong> (Industrial & Retail)</li>
+            <li style="padding: 1rem; background: var(--bg-surface); border-radius: var(--radius-sm); box-shadow: var(--shadow-sm); border-left: 4px solid var(--brand-amber);"><strong>La Jolla / UTC</strong> (Medical & Executive)</li>
+            <li style="padding: 1rem; background: var(--bg-surface); border-radius: var(--radius-sm); box-shadow: var(--shadow-sm); border-left: 4px solid var(--brand-amber);"><strong>Mission Valley</strong> (Retail & Office)</li>
+          </ul>
+
+          <div style="margin-top: 3rem;">
+            <h3>Don't see your specific city?</h3>
+            <p>If you manage a commercial facility within San Diego County borders, our logistics teams can likely accommodate your site. <a href="/contact">Contact dispatch</a> for route availability.</p>
+          </div>
+        </div>
+
+        <div style="background: var(--bg-primary-dark); border-radius: var(--radius-lg); padding: 3rem; color: white;">
+          <h3 style="color: var(--brand-amber); margin-bottom: 1.5rem;">Why Local Routing Matters</h3>
+          <p style="color: #cbd5e1;">In the event of an unexpected facility spill, flood, or audit, response time is critical. Our centralized dispatch in San Diego ensures that a specialized extraction or restoration unit can be redeployed to your site without the logistical drag of out-of-county travel.</p>
+          <a href="/contact" class="btn btn-primary" style="margin-top: 2rem; width: 100%;">Schedule a Local Walkthrough</a>
+        </div>
+      </div>
+    </section>
+  </main>
+</BaseLayout>

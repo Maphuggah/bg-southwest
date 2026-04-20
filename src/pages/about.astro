@@ -1,0 +1,74 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout
+  title="About Us | B & G Southwest Couriers - Delivering Excellence"
+  description="Learn about B & G Southwest Couriers. Built on the logistics of reliability, our San Diego team delivers precision floor care and facility maintenance."
+>
+  <Fragment slot="head">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "@id": "https://bgsouthwest.com/#organization",
+      "name": "B & G Southwest Couriers",
+      "description": "Provider of commercial surface care, rooted in high-accountability delivery and logistics.",
+      "url": "https://bgsouthwest.com",
+      "logo": "https://bgsouthwest.com/img/van.png",
+      "foundingDate": "2021",
+      "knowsAbout": ["Commercial Floor Care", "VCT Stripping & Waxing", "Commercial Carpet Extraction", "Concrete Polishing"]
+    }
+    </script>
+  </Fragment>
+
+  <header class="hero" style="min-height: 50vh;">
+    <img src="/img/hero-about.png" alt="Commercial surface care technicians using a tablet" class="hero-bg" fetchpriority="high">
+    <div class="hero-gradient"></div>
+    <div class="container">
+      <div class="hero-content" style="text-align: center; margin: 0 auto; width: 100%; padding-top: 4rem;">
+        <h1 style="color: white;">The Courier Standard of Care</h1>
+        <p style="max-width: 600px; margin: 0 auto; color: #cbd5e1;">How a mindset rooted in delivery logistics evolved into San Diego's most precise surface care provider.</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section-padding container">
+      <div class="featured-section">
+        <div class="featured-img-wrapper">
+          <img src="/img/van.png" alt="B & G Southwest Commercial Fleet in San Diego" class="featured-img">
+        </div>
+        <div>
+          <h2>Why "Couriers" for a Surface Care Company?</h2>
+          <p>It's the question we hear most often. When we founded B & G Southwest, we didn't start as traditional janitors. We started with the operational blueprint of high-stakes logistics.</p>
+          <p>In logistics, if a high-priority asset doesn't arrive exactly on time, the system fails. We looked at the traditional commercial cleaning industry and saw a lack of that exact accountability. Schedules slipped. Maintenance protocols were ignored. Chemical mixing was treated as a guessing game rather than a science.</p>
+          <p><strong>So, we applied the courier mindset to facility maintenance.</strong></p>
+          <p>Today, B & G Southwest Couriers doesn't deliver parcels; we deliver exact, uncompromising standards. When our specialized floor technicians arrive at a Class A office park in Sorrento Valley, they deploy with route-verified timing, precise chemical dosing protocols (utilizing advanced Diversey and Ecolab tech), and zero margin for error.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding" style="background: var(--bg-primary-dark); color: white;">
+      <div class="container">
+        <h2 style="color: white; text-align: center; margin-bottom: 3rem;">Our Experience & Credentials</h2>
+        <div class="grid grid-3">
+          <div class="card" style="background: var(--brand-navy-light); border: none;">
+            <div class="card-icon">🧪</div>
+            <h3 style="color: white;">Chemical Science Applied</h3>
+            <p style="color: #cbd5e1;">We don't use multi-surface shortcuts. Whether mitigating pH levels on polished terrazzo or targeting protein stains in corporate carpets, our teams carry the specialized solutions required for strict material compatibility.</p>
+          </div>
+          <div class="card" style="background: var(--brand-navy-light); border: none;">
+            <div class="card-icon">🤖</div>
+            <h3 style="color: white;">Embracing Automation</h3>
+            <p style="color: #cbd5e1;">By integrating autonomous scrubbers (powered by advanced navigational AI) combined with human oversight, we provide consistent, overlapping maintenance that eliminates the risk of human fatigue on massive floor plans.</p>
+          </div>
+          <div class="card" style="background: var(--brand-navy-light); border: none;">
+            <div class="card-icon">🎓</div>
+            <h3 style="color: white;">Advanced Training</h3>
+            <p style="color: #cbd5e1;">Led by technicians adhering to IICRC certification standards. Before a team member touches a burnisher or a hot-water extraction wand, they undergo rigorous, supervised technical onboarding.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</BaseLayout>

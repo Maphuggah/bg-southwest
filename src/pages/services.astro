@@ -1,0 +1,95 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout
+  title="Commercial Surface Care Services | B & G Southwest"
+  description="Explore our comprehensive commercial surface care protocols, including VCT stripping and waxing, professional carpet extraction, and concrete polishing in San Diego."
+>
+  <Fragment slot="head">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Commercial Floor Maintenance",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "B & G Southwest Couriers"
+      },
+      "serviceType": ["Carpet Extraction", "VCT Stripping and Waxing", "Concrete Polishing"]
+    }
+    </script>
+  </Fragment>
+
+  <header class="hero" style="min-height: 50vh;">
+    <img src="/img/hero-services.png" alt="Commercial floor cleaning machines lined up" class="hero-bg" fetchpriority="high">
+    <div class="hero-gradient"></div>
+    <div class="container">
+      <div class="hero-content" style="text-align: center; margin: 0 auto; width: 100%; padding-top: 4rem;">
+        <h1 style="color: white;">Our <span>Surface Care</span> Protocols</h1>
+        <p style="max-width: 600px; margin: 0 auto; color: #cbd5e1;">A systematic, chemistry-first approach to commercial facility maintenance across San Diego.</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hard Floor Care -->
+    <section class="section-padding container" id="hard-floors">
+      <div class="featured-section">
+        <div>
+          <h2>Hard Floor Maintenance: VCT, LVT & Terrazzo</h2>
+          <p>High-traffic environments degrade hard floors rapidly. Dust acts like sandpaper, destroying the finish and eventually the tile itself.</p>
+          <p>Our comprehensive hard floor protocol prevents this. We don't just "mop." We execute precise stripping, applying deep-penetrating strippers that emulsify years of cross-linked finish buildup without damaging the subfloor. After radical neutralization, we apply high-solids, slip-resistant acrylic finishes.</p>
+          <ul>
+            <li><strong>Stripping & Waxing:</strong> Complete restoration of VCT (Vinyl Composition Tile).</li>
+            <li><strong>High-Speed Burnishing:</strong> Thermal activation of finishes to restore the "wet look" gloss without applying new wax.</li>
+            <li><strong>LVT Scrub & Recoat:</strong> Specialized, low-abrasion pads designed specifically for Luxury Vinyl Tile.</li>
+          </ul>
+        </div>
+        <div class="featured-img-wrapper" style="background: var(--brand-navy); border-radius: var(--radius-lg); height: 100%; min-height: 300px;">
+          <div style="padding: 3rem; color: white;">
+            <h3 style="color: var(--brand-amber);">Why Neutralization Matters</h3>
+            <p>A frequent mistake in commercial floor care is applying fresh finish over a highly alkaline floor after stripping. This causes the new wax to powder and fail. We measure the floor's pH dynamically before ever pouring a drop of finish.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Carpet Care -->
+    <section class="section-padding" style="background: var(--bg-surface);">
+      <div class="container featured-section" style="grid-template-columns: 1fr 1fr;">
+        <div class="featured-img-wrapper">
+          <img src="/img/carpet.png" alt="Professional Hot Water Extraction on Commercial Carpet" class="featured-img" loading="lazy">
+        </div>
+        <div id="carpet-care">
+          <h2>Commercial Carpet Care & Extraction</h2>
+          <p>Corporate carpets represent a massive capital expenditure. Extending their lifecycle requires more than just vacuuming; it requires scheduled deep-tissue extraction.</p>
+          <p>We deploy two primary methodologies based on your facility's operational hours and carpet soil load:</p>
+          <h3>1. Hot Water Extraction (HWE)</h3>
+          <p>Often referred to as "steam cleaning," this is the industry gold standard. We inject pressurized, heated water mixed with active detergents deep into the carpet pile, simultaneously extracting the suspended soils and up to 95% of the moisture.</p>
+          <h3>2. Low Moisture Encapsulation</h3>
+          <p>Ideal for 24/7 facilities. We apply specialized polymers that crystalize around soil particles. These crystals dry quickly (often in under an hour) and are subsequently removed during routine vacuuming.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Concrete Polishing -->
+    <section class="section-padding container" id="concrete">
+      <h2 style="text-align: center;">Polished Concrete Services</h2>
+      <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem;">Transforming porous, dusting concrete slabs into highly durable, reflective, and low-maintenance surfaces.</p>
+      <div class="grid grid-3">
+        <div class="card">
+          <h3 style="color: var(--brand-navy);">Diamond Grinding</h3>
+          <p>We use heavy planetary grinders equipped with metal-bond diamonds to remove the soft top layer of the slab, exposing the harder concrete beneath.</p>
+        </div>
+        <div class="card">
+          <h3 style="color: var(--brand-navy);">Densification</h3>
+          <p>We apply reactive lithium silicates that penetrate the pores of the concrete, creating a chemical reaction that dramatically hardens the surface and prevents "dusting."</p>
+        </div>
+        <div class="card">
+          <h3 style="color: var(--brand-navy);">Resin Polishing</h3>
+          <p>Using progressively finer resin-bonded diamonds, we polish the floor up to a 3000-grit level, achieving a glass-like finish that reflects ambient light.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+</BaseLayout>
