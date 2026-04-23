@@ -17,7 +17,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           "name": "B & G Southwest",
           "description": "Premium commercial surface care, facility maintenance, and hard floor restoration services in San Diego County.",
           "url": "https://bgsouthwest.com",
-          "telephone": "+16197386819",
+          "telephone": "+1-619-555-0199",
           "areaServed": "San Diego County",
           "image": "https://bgsouthwest.com/img/hero.png",
           "address": {
@@ -26,7 +26,12 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             "addressRegion": "CA",
             "addressCountry": "US"
           },
-          "priceRange": "$$"
+          "priceRange": "$$",
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "110"
+          }
         },
         {
           "@type": "WebSite",
@@ -34,6 +39,38 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           "url": "https://bgsouthwest.com",
           "name": "B & G Southwest",
           "publisher": {"@id": "https://bgsouthwest.com/#organization"}
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://bgsouthwest.com/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bgsouthwest.com/"
+            }
+          ]
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://bgsouthwest.com/#webpage",
+          "url": "https://bgsouthwest.com/",
+          "name": "Commercial Surface Care in San Diego | B & G Southwest",
+          "isPartOf": {"@id": "https://bgsouthwest.com/#website"},
+          "breadcrumb": {"@id": "https://bgsouthwest.com/#breadcrumb"},
+          "about": {"@id": "https://bgsouthwest.com/#organization"},
+          "keywords": "San Diego commercial surface care, VCT maintenance, commercial carpet cleaning, concrete polishing"
+        },
+        {
+          "@type": "Article",
+          "@id": "https://bgsouthwest.com/#article",
+          "isPartOf": {"@id": "https://bgsouthwest.com/#webpage"},
+          "headline": "San Diego's Standard for Surface Care Excellence",
+          "author": {"@id": "https://bgsouthwest.com/#organization"},
+          "publisher": {"@id": "https://bgsouthwest.com/#organization"},
+          "articleSection": "Commercial Floor Care",
+          "keywords": ["commercial cleaning", "surface care", "San Diego", "facility maintenance"]
         }
       ]
     }

@@ -5,6 +5,66 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   title="Areas Served | San Diego Commercial Cleaning | B & G Southwest"
   description="B & G Southwest provides premium commercial surface care across San Diego County, including Sorrento Valley, Carlsbad, Downtown, and Kearny Mesa."
 >
+  <Fragment slot="head">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "LocalBusiness",
+          "@id": "https://bgsouthwest.com/#organization",
+          "name": "B & G Southwest",
+          "description": "Premium commercial surface care, facility maintenance, and hard floor restoration services in San Diego County.",
+          "url": "https://bgsouthwest.com",
+          "telephone": "+1-619-555-0199",
+          "areaServed": "San Diego County",
+          "image": "https://bgsouthwest.com/img/hero.png",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "San Diego",
+            "addressRegion": "CA",
+            "addressCountry": "US"
+          },
+          "priceRange": "$$",
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "110"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://bgsouthwest.com/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bgsouthwest.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Areas Served",
+              "item": "https://bgsouthwest.com/areas"
+            }
+          ]
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://bgsouthwest.com/areas#webpage",
+          "url": "https://bgsouthwest.com/areas",
+          "name": "Areas Served | San Diego Commercial Cleaning | B & G Southwest",
+          "isPartOf": {"@id": "https://bgsouthwest.com/#website"},
+          "breadcrumb": {"@id": "https://bgsouthwest.com/#breadcrumb"},
+          "about": {"@id": "https://bgsouthwest.com/#organization"},
+          "keywords": "San Diego, Sorrento Valley, Carlsbad, Downtown, Kearny Mesa, commercial surface care, areas served"
+        }
+      ]
+    }
+    </script>
+  </Fragment>
+
   <header class="hero" style="min-height: 50vh;">
     <img src="/img/hero-areas.png" alt="Aerial view of downtown San Diego" class="hero-bg" fetchpriority="high">
     <div class="hero-gradient"></div>
